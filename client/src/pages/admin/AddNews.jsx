@@ -35,7 +35,7 @@ const AddNews = () => {
       formData.append('news',JSON.stringify(news))
       formData.append('image',image)
 
-      const {data} = await baxios.post('/api/news/add', formData);
+      const {data} = await axios.post('/api/news/add', formData);
 
       if(data.success){
         toast.success(data.message);
