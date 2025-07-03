@@ -28,7 +28,7 @@ const Header = () => {
         <p className='my-6 sm:my-8 max-w-2xl m-auto max-sm:text-xs text-gray-500'>This is Your own students space too think out loud, to share what matters,and to write without filters.whether its a one word or a thousand we connect all clubs and  activites <span className='bg-yellow-300 font-bold'><br/>WE POST ALL INTENSHIP AND JOB OPPORTUNITIES FOR ALL STUDENTS OF OUR COMMUNITIES . JOIN ASAP</span>   </p>
         
         <form onSubmit={onSubmitHandler} className='flex justify-between max-w-lg max-sm:scale-75 mx-auto border border-gray-300 bg-white rounded overflow-hidden'>
-            <input ref={inputRef} type="text" placeholder="Search News" required className='w-full pl-4 outline-none ' />
+            <input ref={inputRef} type="text" placeholder="Search" required className='w-full pl-4 outline-none ' />
             <button type="submit" className='bg-primary text-white px-8 py-2 m-1.5 rounded hover:scale-105 transition-all cursor-pointer'>Search</button>
         </form>
         
