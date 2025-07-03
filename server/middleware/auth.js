@@ -1,4 +1,4 @@
-import jet from "jsonwebtoken"
+import jwt from "jsonwebtoken"
 
 const auth = (req, res, next)=>{
     const token = req.headers.authorization;
@@ -7,7 +7,7 @@ const auth = (req, res, next)=>{
         jwt.verify(token, process.env.JWT_SECRET)
         next();
     } catch (error) {
-        res.json({sucess:false, message: "invalid token"})
+        res.json({success:false, message: "invalid token"})
     }
 }
 export default auth;
